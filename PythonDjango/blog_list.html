@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About me</title>
-        <link href="./bootstrap5/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">        
+        <title>blog</title>
+        <link href="C:\Users\박준형\PythonDjango\bootstrap5\bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/27fb639ddc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,12 +38,37 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log In</a>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
                     </li>
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-sign-in-alt"></i>&nbsp&nbsp Log in</h5>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row ">
+                            <div class="col-6 d-grid gap-2">
+                                <button type="button" class="btn-outline-dark btn-sm"><i class="fab fa-google"></i>&nbsp&nbsp Log in with Google</button>
+                                <button type="button" class="btn-outline-dark btn-sm"><i class="fas fa-envelope"></i>&nbsp&nbsp Log in with E-mail</button>
+                            </div>
+                            <div class="col-6 d-grid gap-2">
+                                <button type="button" class="btn-outline-dark btn-sm"><i class="fas fa-user-plus"></i>&nbsp&nbsp Sigh Up with E-mail</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container my-3">
             <div class="row">
                 <div class="col-md-8 col-lg-9">
@@ -65,10 +93,7 @@
                             <a class="btn btn-primary" href="#!">Read more →</a>
                         </div>
                     </div>
-                </div>
-                <!-- Pagination-->
-                <nav aria-label="Pagination">
-                    <hr class="mb-4" />
+                    <!-- Pagination-->
                     <ul class="pagination justify-content-center my-4">
                         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
                         <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
@@ -78,7 +103,7 @@
                         <li class="page-item"><a class="page-link" href="#!">15</a></li>
                         <li class="page-item"><a class="page-link" href="#!">Older</a></li>
                     </ul>
-                </nav>     
+                </div>
                 <div class="col-md-4 col-lg-3">
                     <!-- Search widget-->
                     <div class="card mb-4">
@@ -114,7 +139,6 @@
                 </div>                        
             </div>                        
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        
     </body>
 </html>
