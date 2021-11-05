@@ -1,5 +1,3 @@
-from IPython.core.display import Image, display
 
-display(Image("image.jpg"))
-
-HTML
+import sys 
+sys.executable 
